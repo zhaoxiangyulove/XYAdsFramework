@@ -10,6 +10,10 @@
 		A2FCD902205A4F2B000AE06B /* XYAdsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FCD8F8205A4F2B000AE06B /* XYAdsFramework.framework */; };
 		A2FCD907205A4F2B000AE06B /* XYAdsFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FCD906205A4F2B000AE06B /* XYAdsFrameworkTests.m */; };
 		A2FCD909205A4F2B000AE06B /* XYAdsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FCD8FB205A4F2B000AE06B /* XYAdsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2FCD914205A512A000AE06B /* XYAdsBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FCD912205A512A000AE06B /* XYAdsBaseManager.h */; };
+		A2FCD915205A512A000AE06B /* XYAdsBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FCD913205A512A000AE06B /* XYAdsBaseManager.m */; };
+		A2FCD918205A5161000AE06B /* XYAd.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FCD916205A5161000AE06B /* XYAd.h */; };
+		A2FCD919205A5162000AE06B /* XYAd.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FCD917205A5161000AE06B /* XYAd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		A2FCD901205A4F2B000AE06B /* XYAdsFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYAdsFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FCD906205A4F2B000AE06B /* XYAdsFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAdsFrameworkTests.m; sourceTree = "<group>"; };
 		A2FCD908205A4F2B000AE06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2FCD912205A512A000AE06B /* XYAdsBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYAdsBaseManager.h; sourceTree = "<group>"; };
+		A2FCD913205A512A000AE06B /* XYAdsBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAdsBaseManager.m; sourceTree = "<group>"; };
+		A2FCD916205A5161000AE06B /* XYAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYAd.h; sourceTree = "<group>"; };
+		A2FCD917205A5161000AE06B /* XYAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,15 @@
 			isa = PBXGroup;
 			children = (
 				A2FCD8FB205A4F2B000AE06B /* XYAdsFramework.h */,
+				A2FCD912205A512A000AE06B /* XYAdsBaseManager.h */,
+				A2FCD913205A512A000AE06B /* XYAdsBaseManager.m */,
+				A2FCD916205A5161000AE06B /* XYAd.h */,
+				A2FCD917205A5161000AE06B /* XYAd.m */,
+				A2FCD91E205A6430000AE06B /* InStreamAd */,
+				A2FCD91D205A52EA000AE06B /* BannerAd */,
+				A2FCD91C205A52CF000AE06B /* RewardedAd */,
+				A2FCD91B205A5200000AE06B /* InterstitialAd */,
+				A2FCD91A205A51E0000AE06B /* NativeAd */,
 				A2FCD8FC205A4F2B000AE06B /* Info.plist */,
 			);
 			path = XYAdsFramework;
@@ -86,6 +103,41 @@
 			path = XYAdsFrameworkTests;
 			sourceTree = "<group>";
 		};
+		A2FCD91A205A51E0000AE06B /* NativeAd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NativeAd;
+			sourceTree = "<group>";
+		};
+		A2FCD91B205A5200000AE06B /* InterstitialAd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InterstitialAd;
+			sourceTree = "<group>";
+		};
+		A2FCD91C205A52CF000AE06B /* RewardedAd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RewardedAd;
+			sourceTree = "<group>";
+		};
+		A2FCD91D205A52EA000AE06B /* BannerAd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BannerAd;
+			sourceTree = "<group>";
+		};
+		A2FCD91E205A6430000AE06B /* InStreamAd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InStreamAd;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2FCD909205A4F2B000AE06B /* XYAdsFramework.h in Headers */,
+				A2FCD914205A512A000AE06B /* XYAdsBaseManager.h in Headers */,
+				A2FCD918205A5161000AE06B /* XYAd.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +196,7 @@
 		A2FCD8EF205A4F2B000AE06B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XY;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = xiangyu.zhao;
 				TargetAttributes = {
@@ -195,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FCD915205A512A000AE06B /* XYAdsBaseManager.m in Sources */,
+				A2FCD919205A5162000AE06B /* XYAd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
