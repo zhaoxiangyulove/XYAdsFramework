@@ -8,6 +8,26 @@
 
 #import "XYAd.h"
 
-@implementation XYAd
+@interface XYAd()
+//config
+@property (nonatomic, copy) NSDictionary *config;
 
+@end
+
+
+
+@implementation XYAd
++ (instancetype)adWithConfig:(NSDictionary *)config{
+    XYAd *ad = [[self alloc] initWithConfig:config];
+    return ad;
+}
+
+- (instancetype)initWithConfig:(NSDictionary *)config
+{
+    self = [super init];
+    if (self) {
+        _config = [config copy];
+    }
+    return self;
+}
 @end

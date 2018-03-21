@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+
+@protocol XYAdsBaseManagerDelegate <NSObject>
+
+@end
+
 @interface XYAdsBaseManager : NSObject
+
+//delegate
+@property (nonatomic, weak) id<XYAdsBaseManagerDelegate> delegate;
+
+
+
++ (instancetype)shareInstance;
 
 @end

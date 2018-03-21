@@ -1,0 +1,25 @@
+//
+//  XYVendor.h
+//  XYAdsFramework
+//
+//  Created by zhaoxiangyu on 2018/3/16.
+//  Copyright © 2018年 xiangyu.zhao. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@class XYVendorConfig;
+@class XYAd;
+
+@interface XYVendor : NSObject
+//vendorConfig
+@property (nonatomic, strong, readonly) XYVendorConfig *vendorConfig;
+//ads
+@property (nonatomic, strong) NSMutableArray<XYAd *> *ads;
+//APPKey
+@property (nonatomic, strong, readonly) NSString *key;
+
+
++ (instancetype)venderWithStringType:(NSString *)type;
+
+@end
