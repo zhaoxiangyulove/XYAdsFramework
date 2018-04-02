@@ -11,7 +11,8 @@
 
 typedef enum : NSUInteger {
     XYLoadStrategyStatusRunning,
-    XYLoadStrategyStatusIdle,
+    XYLoadStrategyStatusSucceed,
+    XYLoadStrategyStatusFailed,
 } XYLoadStrategyStatus;
 
 typedef void(^XYStrategyCallbackBlock)(BOOL result, NSDictionary *resultsDictionary);
@@ -19,6 +20,8 @@ typedef void(^XYStrategyCallbackBlock)(BOOL result, NSDictionary *resultsDiction
 @interface XYStrategy : NSObject
 //strategyStatus
 @property (nonatomic, assign, readonly) XYLoadStrategyStatus status;
+//resultDictionary
+@property (nonatomic, strong) NSDictionary *resultDictionary;
 
 
 + (instancetype)strategyWithCompleteBlock:(XYStrategyCallbackBlock)callback;

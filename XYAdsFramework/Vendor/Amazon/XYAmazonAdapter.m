@@ -7,7 +7,7 @@
 //
 
 #import "XYAmazonAdapter.h"
-@interface XYbaseAdapter()
+@interface XYAmazonAdapter()
 //vendor
 @property (nonatomic, strong) XYVendor *vendor;
 @end
@@ -21,8 +21,8 @@
     self = [super init];
     if (self) {
         self.vendor = vendor;
+        self.supported = YES;
     }
     return self;
 }
-
 @end

@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XYVendorConfig.h"
 
-@class XYVendorConfig;
 @class XYAd;
 
 @interface XYVendor : NSObject
+//adapterClassName
+@property (nonatomic, strong, readonly) NSString *adapterClassName;
 //vendorConfig
 @property (nonatomic, strong, readonly) XYVendorConfig *vendorConfig;
 //ads

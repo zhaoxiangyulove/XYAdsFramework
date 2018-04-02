@@ -10,8 +10,7 @@
 #import "XYLog.h"
 
 @interface XYVendor()
-//adapterClassName
-@property (nonatomic, strong) NSString *adapterClassName;
+
 //name
 @property (nonatomic, strong) NSString *name;
 //ids
@@ -24,10 +23,17 @@
     if (type.length <= 0) {
         [XYLog logError:@"vender type is nil" object:[NSString stringWithUTF8String:__func__]];
     }
-    XYVendor *vender = [[self alloc] init];
-    vender.name = type;
-    vender.adapterClassName = type;
+    XYVendor *vender = [[self alloc] initWithStringType:type];
     return vender;
+}
+- (instancetype)initWithStringType:(NSString *)type
+{
+    self = [super init];
+    if (self) {
+        _name = type;
+        _adapterClassName = type;
+    }
+    return self;
 }
 
 @end

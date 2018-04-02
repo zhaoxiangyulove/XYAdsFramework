@@ -16,10 +16,10 @@
 @interface XYAdsBaseManager : NSObject
 
 //delegate
-@property (nonatomic, weak) id<XYAdsBaseManagerDelegate> delegate;
+//@property (nonatomic, weak) id<XYAdsBaseManagerDelegate> delegate;
 
 
 
 + (instancetype)shareInstance;
-
+- (void)setPlacement:(NSString *)placement delegate:(id<XYAdsBaseManagerDelegate>)delegate;
 @end

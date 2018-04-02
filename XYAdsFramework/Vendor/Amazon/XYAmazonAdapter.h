@@ -8,6 +8,6 @@
 
 #import "XYbaseAdapter.h"
 
-@interface XYAmazonAdapter : XYbaseAdapter 
+@interface XYAmazonAdapter : XYbaseAdapter
 
 @end

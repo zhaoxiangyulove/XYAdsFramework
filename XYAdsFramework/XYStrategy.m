@@ -7,6 +7,7 @@
 //
 
 #import "XYStrategy.h"
+#import "XYGCDTool.h"
 
 @interface XYStrategy()
 
@@ -25,10 +26,27 @@
     self = [super init];
     if (self) {
         _callback = callback;
+        _status = XYLoadStrategyStatusRunning;
         //读取配置信息，加载策略
+        [self readLocalFile];
         
     }
     return self;
+}
+//读取配置信息，加载策略
+- (void)readLocalFile{
+    __block BOOL readResult = NO;
+    __block NSDictionary *resultDic = [NSDictionary dictionary];
+    [XYGCDTool xy_async:^{
+        //加载
+
+    } complete:^{
+        //回调
+        if (_callback) {
+            _callback(readResult,resultDic);
+        }
+    }];
+    
 }
 
 @end

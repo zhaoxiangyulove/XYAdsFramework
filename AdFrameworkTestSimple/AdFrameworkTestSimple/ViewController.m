@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <XYAdsFramework/XYAdsBaseManager.h>
+#import <XYAdsFramework/XYBannerAdView.h>
 
 @interface ViewController ()
 
@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [XYAdsBaseManager shareInstance];
+    XYBannerAdView *banner = [XYBannerAdView bannerViewWithPlacement:@"banner"];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

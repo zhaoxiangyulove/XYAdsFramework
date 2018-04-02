@@ -6,5 +6,5 @@
 //  Copyright © 2018年 xiangyu.zhao. All rights reserved.
 //
 
-#import <XYAdsFramework/XYAdsBaseManager.h>
+#import <XYAdsFramework/XYBannerAdView.h>
 

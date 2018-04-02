@@ -12,6 +12,8 @@
 
 
 @interface XYbaseAdapter : NSObject
+//supported
+@property (nonatomic, assign) BOOL supported;
 
 //实现由子类完成
 + (instancetype)initializeSdkWithAdVendor:(XYVendor *)vendor;
