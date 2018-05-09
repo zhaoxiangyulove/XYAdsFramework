@@ -42,7 +42,10 @@ static XYAdsBaseManager *_manager = nil;
             if (result == YES) {
                 //set vendors
                 NSMutableArray *vendors = [NSMutableArray array];
+                
+                
                 _vendors = [vendors copy];
+                //creat adapters
                 [weakSelf creatAdapters];
             }
         }];

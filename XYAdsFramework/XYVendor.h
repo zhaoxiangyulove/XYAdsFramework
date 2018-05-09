@@ -12,6 +12,8 @@
 @class XYAd;
 
 @interface XYVendor : NSObject
+//name
+@property (nonatomic, strong, readonly) NSString *name;
 //adapterClassName
 @property (nonatomic, strong, readonly) NSString *adapterClassName;
 //vendorConfig

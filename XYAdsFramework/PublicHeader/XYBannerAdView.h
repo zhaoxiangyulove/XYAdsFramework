@@ -6,9 +6,9 @@
 //  Copyright © 2018年 xiangyu.zhao. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XYBaseAdView.h"
 
-@interface XYBannerAdView : UIView
+@interface XYBannerAdView : XYBaseAdView
 
 + (instancetype)bannerViewWithPlacement:(NSString *)placement;
 

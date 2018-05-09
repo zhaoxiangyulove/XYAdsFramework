@@ -23,6 +23,8 @@
 		A2A25D35206A440600F72338 /* XYBannerAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A25D33206A440600F72338 /* XYBannerAdView.m */; };
 		A2BDAC5F205FEB5000A13AD5 /* XYbaseAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = A2BDAC5D205FEB5000A13AD5 /* XYbaseAdapter.h */; };
 		A2BDAC60205FEB5000A13AD5 /* XYbaseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BDAC5E205FEB5000A13AD5 /* XYbaseAdapter.m */; };
+		A2C67DDD2089D440008A7506 /* XYBaseAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C67DDB2089D440008A7506 /* XYBaseAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2C67DDE2089D440008A7506 /* XYBaseAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C67DDC2089D440008A7506 /* XYBaseAdView.m */; };
 		A2F2B91420624B1E0096611C /* XYGCDTool.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F2B91220624B1E0096611C /* XYGCDTool.h */; };
 		A2F2B91520624B1E0096611C /* XYGCDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F2B91320624B1E0096611C /* XYGCDTool.m */; };
 		A2FCD902205A4F2B000AE06B /* XYAdsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FCD8F8205A4F2B000AE06B /* XYAdsFramework.framework */; };
@@ -61,6 +63,8 @@
 		A2A25D33206A440600F72338 /* XYBannerAdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBannerAdView.m; sourceTree = "<group>"; };
 		A2BDAC5D205FEB5000A13AD5 /* XYbaseAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYbaseAdapter.h; sourceTree = "<group>"; };
 		A2BDAC5E205FEB5000A13AD5 /* XYbaseAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYbaseAdapter.m; sourceTree = "<group>"; };
+		A2C67DDB2089D440008A7506 /* XYBaseAdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBaseAdView.h; sourceTree = "<group>"; };
+		A2C67DDC2089D440008A7506 /* XYBaseAdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBaseAdView.m; sourceTree = "<group>"; };
 		A2F2B8922062089D0096611C /* DTBiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DTBiOSSDK.framework; sourceTree = "<group>"; };
 		A2F2B91220624B1E0096611C /* XYGCDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYGCDTool.h; sourceTree = "<group>"; };
 		A2F2B91320624B1E0096611C /* XYGCDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYGCDTool.m; sourceTree = "<group>"; };
@@ -256,6 +260,8 @@
 				A2652F39205BCA5200756678 /* XYVendor.m */,
 				A2BDAC5D205FEB5000A13AD5 /* XYbaseAdapter.h */,
 				A2BDAC5E205FEB5000A13AD5 /* XYbaseAdapter.m */,
+				A2C67DDB2089D440008A7506 /* XYBaseAdView.h */,
+				A2C67DDC2089D440008A7506 /* XYBaseAdView.m */,
 				A203C4F2206E6E09007C5497 /* XYDelegate.h */,
 				A203C4F3206E6E09007C5497 /* XYDelegate.m */,
 				A2A25D31206A43CF00F72338 /* PublicHeader */,
@@ -286,6 +292,7 @@
 				A203C4F4206E6E09007C5497 /* XYDelegate.h in Headers */,
 				A2652F44205CDFE500756678 /* XYLog.h in Headers */,
 				A2FCD914205A512A000AE06B /* XYAdsBaseManager.h in Headers */,
+				A2C67DDD2089D440008A7506 /* XYBaseAdView.h in Headers */,
 				A2F2B91420624B1E0096611C /* XYGCDTool.h in Headers */,
 				A2FCD909205A4F2B000AE06B /* XYAdsFramework.h in Headers */,
 				A2652F3A205BCA5200756678 /* XYVendor.h in Headers */,
@@ -396,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A25D35206A440600F72338 /* XYBannerAdView.m in Sources */,
+				A2C67DDE2089D440008A7506 /* XYBaseAdView.m in Sources */,
 				A2FCD915205A512A000AE06B /* XYAdsBaseManager.m in Sources */,
 				A2BDAC60205FEB5000A13AD5 /* XYbaseAdapter.m in Sources */,
 				A2652F37205BA63D00756678 /* XYVendorConfig.m in Sources */,

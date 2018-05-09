@@ -11,8 +11,7 @@
 
 @interface XYVendor()
 
-//name
-@property (nonatomic, strong) NSString *name;
+
 //ids
 @property (nonatomic, strong) NSArray *ids;
 
@@ -31,7 +30,7 @@
     self = [super init];
     if (self) {
         _name = type;
-        _adapterClassName = type;
+        _adapterClassName = [NSString stringWithFormat:@"XY%@Adapter",type];
     }
     return self;
 }

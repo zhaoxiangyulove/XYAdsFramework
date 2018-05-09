@@ -19,7 +19,7 @@
 @implementation XYStrategy
 
 + (instancetype)strategyWithCompleteBlock:(XYStrategyCallbackBlock)callback{
-    return [[self alloc] init];
+    return [[self alloc] initWithCompleteBlock:callback];
 }
 - (instancetype)initWithCompleteBlock:(XYStrategyCallbackBlock)callback
 {
