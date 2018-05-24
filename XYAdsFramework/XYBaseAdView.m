@@ -7,6 +7,7 @@
 //
 
 #import "XYBaseAdView.h"
+#import "XYBaseAdView+internal.h"
 #import "XYAdsBaseManager.h"
 
 @interface XYBaseAdView()<XYAdsBaseManagerDelegate>
@@ -19,7 +20,7 @@
     self = [super init];
     if (self) {
         _placement = placement;
-        [[XYAdsBaseManager shareInstance] setPlacement:placement delegate:self];
+        [self.baseManager setPlacement:placement];
     }
     return self;
 }
@@ -31,5 +32,10 @@
 }
 - (void)autoShowAdWithTimeInterval:(NSTimeInterval)interVal{
     
+}
+@end
+@implementation XYBaseAdView (baseManager)
+- (XYAdsBaseManager *)baseManager{
+    return [XYAdsBaseManager shareInstance];
 }
 @end

@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XYBaseAdView.h"
+#import "XYAd.h"
 
 
 @protocol XYAdsBaseManagerDelegate <NSObject>
 
 @end
+
+typedef void(^XYManagerCompleteBlock)(BOOL succeed, NSError *error, NSArray *ads);
+typedef void(^XYManagerDownloadBlock)(XYAd *ad);
 
 @interface XYAdsBaseManager : NSObject
 
@@ -21,5 +26,9 @@
 
 
 + (instancetype)shareInstance;
-- (void)setPlacement:(NSString *)placement delegate:(id<XYAdsBaseManagerDelegate>)delegate;
+- (void)setPlacement:(NSString *)placement;
+- (void)downloadAd:(XYBaseAdView *)baseView
+             count:(int)count
+  downloadingBlock:(XYManagerDownloadBlock)downloadBlock
+     completeBlock:(XYManagerCompleteBlock)completeBlock;
 @end

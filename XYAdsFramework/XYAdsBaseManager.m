@@ -21,7 +21,7 @@
 //strategy
 @property (nonatomic, strong) XYStrategy *strategy;
 //delegates
-@property (nonatomic, strong) NSMutableDictionary <NSString *, XYDelegate *> *delegates;
+@property (nonatomic, strong) NSMutableDictionary <NSString *, NSMutableArray *> *delegates;
 @end
 
 @implementation XYAdsBaseManager
@@ -38,8 +38,8 @@ static XYAdsBaseManager *_manager = nil;
     self = [super init];
     if (self) {
         __weak typeof(self)weakSelf = self;
-        _strategy = [XYStrategy strategyWithCompleteBlock:^(BOOL result, NSDictionary *resultsDictionary) {
-            if (result == YES) {
+        _strategy = [XYStrategy strategyWithCompleteBlock:^(BOOL succeed, NSDictionary *resultsDictionary) {
+            if (succeed == YES) {
                 //set vendors
                 NSMutableArray *vendors = [NSMutableArray array];
                 
@@ -60,14 +60,21 @@ static XYAdsBaseManager *_manager = nil;
         XYbaseAdapter *adapter = [XYbaseAdapter initializeSdkWithAdVendor:vendor];
     });
 }
-- (void)setPlacement:(NSString *)placement delegate:(id<XYAdsBaseManagerDelegate>)delegate{
-    XYDelegate *oneDelegate = [[XYDelegate alloc] init];
-    oneDelegate.key = placement;
-    oneDelegate.delegate = delegate;
-    self.delegates[placement] = oneDelegate;
+- (void)setPlacement:(NSString *)placement{
+    NSMutableArray *delegates = self.delegates[placement];
+    if (delegates == nil) {
+        delegates = [[NSMutableArray alloc] init];
+    }
+    self.delegates[placement] = delegates;
+}
+- (void)downloadAd:(XYBaseAdView *)baseView
+             count:(int)count
+  downloadingBlock:(XYManagerDownloadBlock)downloadBlock
+     completeBlock:(XYManagerCompleteBlock)completeBlock{
+    
 }
 #pragma mark lazy loading methods
-- (NSMutableDictionary<NSString *,XYDelegate *> *)delegates{
+- (NSMutableDictionary<NSString *, NSMutableArray *> *)delegates{
     if (_delegates == nil) {
         _delegates = [[NSMutableDictionary alloc] init];
     }

@@ -9,14 +9,23 @@
 #import <UIKit/UIKit.h>
 
 @class XYAd;
+@class XYBaseAdView;
+
+@protocol XYBaseAdViewDelegate
+- (void)XYAdView:(XYBaseAdView *)view receiveAd:(XYAd *)ad;
+- (void)XYAdView:(XYBaseAdView *)view finishLoadAd:(NSArray <XYAd*>*)ads Error:(NSError *)error;
+@end
 
 @interface XYBaseAdView : UIView
 @property (nonatomic, strong, readonly) NSString *placement;
 //ad
 @property (nonatomic, strong, readonly) XYAd *currentAd;
 
+//delegate
+@property (nonatomic, weak) id<XYBaseAdViewDelegate> delegate;
+
 - (instancetype)initWithPlacement:(NSString *)placement;
-- (void)preloadAdWithCount:(NSInteger)count;
+- (void)loadAdWithCount:(NSInteger)count;
 - (void)showAd;
 - (void)autoShowAdWithTimeInterval:(NSTimeInterval)interVal;
 @end

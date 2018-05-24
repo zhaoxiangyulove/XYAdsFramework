@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2023E8520A5C6A100D5638A /* XYBaseAdView+internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A2023E8320A5C6A100D5638A /* XYBaseAdView+internal.h */; };
 		A203C4F4206E6E09007C5497 /* XYDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A203C4F2206E6E09007C5497 /* XYDelegate.h */; };
 		A203C4F5206E6E09007C5497 /* XYDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A203C4F3206E6E09007C5497 /* XYDelegate.m */; };
 		A2652F36205BA63D00756678 /* XYVendorConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A2652F34205BA63D00756678 /* XYVendorConfig.h */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2023E8320A5C6A100D5638A /* XYBaseAdView+internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XYBaseAdView+internal.h"; sourceTree = "<group>"; };
 		A203C4F2206E6E09007C5497 /* XYDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYDelegate.h; sourceTree = "<group>"; };
 		A203C4F3206E6E09007C5497 /* XYDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYDelegate.m; sourceTree = "<group>"; };
 		A2652F34205BA63D00756678 /* XYVendorConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYVendorConfig.h; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				A2BDAC5E205FEB5000A13AD5 /* XYbaseAdapter.m */,
 				A2C67DDB2089D440008A7506 /* XYBaseAdView.h */,
 				A2C67DDC2089D440008A7506 /* XYBaseAdView.m */,
+				A2023E8320A5C6A100D5638A /* XYBaseAdView+internal.h */,
 				A203C4F2206E6E09007C5497 /* XYDelegate.h */,
 				A203C4F3206E6E09007C5497 /* XYDelegate.m */,
 				A2A25D31206A43CF00F72338 /* PublicHeader */,
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A25D34206A440600F72338 /* XYBannerAdView.h in Headers */,
+				A2023E8520A5C6A100D5638A /* XYBaseAdView+internal.h in Headers */,
 				A27A8F2920613980004FF997 /* XYAmazonAdapter.h in Headers */,
 				A203C4F4206E6E09007C5497 /* XYDelegate.h in Headers */,
 				A2652F44205CDFE500756678 /* XYLog.h in Headers */,
