@@ -25,7 +25,7 @@
 @property (nonatomic, weak) id<XYBaseAdViewDelegate> delegate;
 
 - (instancetype)initWithPlacement:(NSString *)placement;
-- (void)loadAdWithCount:(NSInteger)count;
+//- (void)loadAdWithCount:(NSInteger)count;
 - (void)showAd;
 - (void)autoShowAdWithTimeInterval:(NSTimeInterval)interVal;
 @end
